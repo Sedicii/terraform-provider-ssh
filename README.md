@@ -24,8 +24,15 @@ provider "ssh" {
   version = "~> 0.1.0"
 }
 
-data "ssh_tunnel" "bastion1" {
-  
+data "ssh_tunnel" "bastion" {
+    bastion_host = "${var.bastion_host}"
+    bastion_port = "${var.bastion_port}"
+    bastion_user = "${var.bastion_user}"
+    bastion_private_key = "${var.bastion_private_key}"
+//  bastion_password = "${var.bastion_password}"
+    bastion_host_key = "${var.bastion_host_key}"
+    remote_host = "${var.remote_host}"
+    remote_port = "${var.remote_port}"
 }
 ```
 
