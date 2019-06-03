@@ -13,8 +13,15 @@ This provider plugin is maintained by [Sedicii](https://sedicii.com/).
 
 ### Installation
 
+#### Terraform =< 11 
 ```bash
 curl https://raw.githubusercontent.com/Sedicii/terraform-provider-ssh/master/scripts/install-ssh-tf-pluging.sh | bash
+```
+
+#### Terraform => 12 
+
+```bash
+curl https://raw.githubusercontent.com/Sedicii/terraform-provider-ssh/master/scripts/install-ssh-tf12-pluging.sh | bash
 ```
 
 ### Usage
